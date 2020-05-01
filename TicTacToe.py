@@ -50,7 +50,7 @@ def turn():
             ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
             choice = input("You can't do that. Choose again: ")
         
-        # prevent overwriting by computer
+        # prevent overwriting by user
         position = int(choice) - 1
         while board[position] == "X" or board[position] == "O": 
             choice = input("You can't do that. Choose again: ")
@@ -65,6 +65,7 @@ def display_board():
        
 def check_win():
     global winner
+    # note to self: simplify this later
     r_1 = board[0] == board[1] == board[2] 
     r_2 = board[3] == board[4] == board[5] 
     r_3 = board[6] == board[7] == board[8] 
