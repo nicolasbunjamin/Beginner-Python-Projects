@@ -1,3 +1,5 @@
+# shoutout to Aaron Bernath (Clever Programmer) for inspiration (https://www.youtube.com/watch?v=BHh654_7Cmw)
+
 from random import randint
 board = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 player = ""
